@@ -1,0 +1,39 @@
+
+<div class="container border border-dark border-2 rounded my-5 heroe-background">
+
+    <div class="row">
+        <div class="col-8 text-center text-white py-3 trirong-semibold" style="background-color:#112D4E">BLOG WEBSITE PROJECT</div>
+        <div class="col-4 text-center py-3 rasa-p lead"><strong>Date: </strong><%= blogPost.blogTime %></div>
+    </div>
+
+    <div class="row py-3 border-bottom border-top border-2 border-dark">
+        <div class="col-12 text-center display-5 trirong-semibold"><%= blogPost.blogTitle %></div>
+    </div>
+
+    <div class="row py-3 border-bottom border-2 border-dark rasa-p">
+        <div class="col-12 text-center lead">Author: <%= blogPost.firstName %> <%= blogPost.lastName %></div>
+    </div>
+    <div class="row py-3 rasa-p lead">
+        <div class="col-12"><p><%= blogPost.blogContent %></p>
+
+            <div class="text-center mt-5 mb-3">
+                <form action="/edit" method="GET" style="display:inline">
+                    <input type="hidden" name="id" value="<%= blogPost.id %>">
+                    <button type="submit" class="btn btn-primary rasa-p" style="width:72px;"> Edit </button>
+                </form>
+
+                <form action="/delete" method="POST" style="display:inline">
+                    <input type="hidden" name="id" value="<%= blogPost.id %>">
+                    <button type="submit" class="btn btn-primary rasa-p" style="width:72px"> Delete </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

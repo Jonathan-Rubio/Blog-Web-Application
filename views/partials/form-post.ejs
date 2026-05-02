@@ -1,0 +1,92 @@
+<div class="container py-5">
+    <div class="row g-3 heroe-background">
+        <div class="col-md-12 col-lg-12">
+            <h4 class="mb-3 display-5 trirong-semibold">
+                <font dir="auto" style="vertical-align: inherit">
+                    <font dir="auto" style="vertical-align: inherit">Create a new Blog Post!</font>
+                </font>
+            </h4>
+            <form action="/submit" method="POST" class="needs-validation">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="fName" class="form-label rasa-p lead">
+                            <font dir="auto" style="vertical-align: inherit">
+                                <font dir="auto" style="vertical-align: inherit">First name</font>
+                            </font>
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            name="fName"
+                            placeholder=""
+                            value=""
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lName" class="form-label rasa-p lead">
+                            <font dir="auto" style="vertical-align: inherit">
+                                <font dir="auto" style="vertical-align: inherit">Last name</font>
+                            </font>
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            name="lName"
+                            placeholder=""
+                            value=""
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-12">
+                        <label for="title" class="form-label rasa-p lead">
+                            <font dir="auto" style="vertical-align: inherit">
+                                <font dir="auto" style="vertical-align: inherit">Blog Title</font>
+                            </font>
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="title"
+                            name="title"
+                            placeholder=""
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-12">
+                        <label for="content" class="form-label rasa-p lead">
+                            <font dir="auto" style="vertical-align: inherit">
+                                <font dir="auto" style="vertical-align: inherit">Blog Content</font>
+                            </font>
+                        </label>
+                        <textarea
+                            type="text"
+                            class="form-control"
+                            id="content"
+                            name="content"
+                            placeholder=""
+                            rows="3"
+                            style="height:120px; resize: none;"
+                            required
+                        >
+                        </textarea>
+                    </div>
+                </div>
+
+                <hr class="my-4"/>
+                    
+                <button class="w-100 btn btn-primary btn-lg rasa-p" type="submit">
+                    <font dir="auto" style="vertical-align: inherit">
+                        <font dir="auto" style="vertical-align: inherit">Post</font>
+                    </font>
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
